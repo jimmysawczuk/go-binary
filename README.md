@@ -10,7 +10,7 @@ Takes data from `os.Stdin` and transforms it into a Go source code file suitable
 $ go get github.com/jimmysawczuk/go-binary
 
 # Download some test content from the web
-$ curl https://www.nytimes.com > index.html
+$ curl https://jimmysawczuk.com > index.html
 
 # Pipe the content into go-binary to generate a .go file with our content in it
 $ cat index.html | go-binary -f="getData" -out="$GOPATH/src/github.com/jimmysawczuk/go-binary/go-binary-example/get_data.go"
